@@ -35,7 +35,13 @@ header .logo{
     box-shadow: 3px 3px 0px #333, 2px 3px 0px #333, 3px 2px 0px #333;
 }
 
-header .logo h1{
+header .logo a{
+    text-decoration: none;
+    color: #333;
+
+}
+
+header .logo a h1{
     font-size: 4em;
     font-family: monospace;
  
@@ -58,6 +64,12 @@ header .logo h1{
     cursor: pointer;
     padding: .3em 0;
     font-weight: 700;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #333;
 }
 
 .sec1{
@@ -162,7 +174,12 @@ footer{
     background-color: #444;
     height: 100px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
+
 
 
 
