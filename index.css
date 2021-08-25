@@ -295,6 +295,7 @@ ul.active{
 
     header .logo a h1{
         font-size: 3em;
+        overflow-x: visible;
        
     }
 
@@ -355,10 +356,11 @@ ul.active{
         height: 100px;
     }
 
+    .sec2 .buttons div {
+        overflow-x: visible;
+    }
+
    
-
-
-
 
 
 }
