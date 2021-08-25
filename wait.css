@@ -141,10 +141,12 @@ div.wait h2{
     width: 90%;
     height: 90%;
     left: 5%;
-    background-color: rgba(255, 242, 124, 0.979);
+    background-color: rgba(255, 244, 147, 0.658);
     display: none;
     border-radius: 5px;
+    backdrop-filter: blur(15px);
 }
+
 
  #menubox.active{
     display: flex;
@@ -174,6 +176,7 @@ div.wait h2{
     align-items: center;
 }
 
+
 ul.active{
     margin: 0%;
     width: 100%;
@@ -185,7 +188,7 @@ ul.active{
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    align-items: center;
+    align-items: flex-start;
     
 }
 
@@ -195,16 +198,16 @@ ul.active{
     width: 4em;
     height: max-content;
     cursor: pointer;
-    text-align: center;
     line-height: 1.7em;
-    font-weight: 700;
+    font-weight: 800;
+    overflow: visible;
+    margin-left: 20%;
 }
 
 #menubox ul.active li a{
     text-decoration: none;
     color: #333;
 }
-
 
 @media (max-width: 600px){
 
