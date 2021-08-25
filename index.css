@@ -205,9 +205,10 @@ footer{
     width: 90%;
     height: 90%;
     left: 5%;
-    background-color: rgba(255, 242, 124, 0.979);
+    background-color: rgba(255, 244, 147, 0.658);
     display: none;
     border-radius: 5px;
+    backdrop-filter: blur(15px);
 }
 
  #menubox.active{
@@ -236,6 +237,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 ul.active{
@@ -249,7 +251,7 @@ ul.active{
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    align-items: center;
+    align-items: flex-start;
     
 }
 
@@ -259,9 +261,10 @@ ul.active{
     width: 4em;
     height: max-content;
     cursor: pointer;
-    text-align: center;
     line-height: 1.7em;
-    font-weight: 700;
+    font-weight: 800;
+    overflow: visible;
+    margin-left: 20%;
 }
 
 #menubox ul.active li a{
@@ -290,7 +293,9 @@ ul.active{
         border-radius: 3px;
         padding: .5em 1em;
         cursor: pointer;
-        box-shadow: 3px 3px 0px #333, 2px 3px 0px #333, 3px 2px 0px #333;
+        box-shadow: 
+    0.1em 0.1em 0 #333,
+    0.2em 0.2em 0 #333;
     }
 
     header .logo a h1{
@@ -352,7 +357,7 @@ ul.active{
 
     .sec2 .imgs img{
         
-        width: 150px;
+        width: 150px; 
         height: 100px;
     }
 
