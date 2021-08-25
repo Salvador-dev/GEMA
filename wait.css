@@ -231,6 +231,7 @@ ul.active{
 
     header .logo a h1{
         font-size: 3em;
+        overflow: visible;
        
     }
 
