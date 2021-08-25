@@ -32,14 +32,23 @@ header .logo{
     border-radius: 3px;
     padding: .5em 1em;
     cursor: pointer;
-    box-shadow: 3px 3px 0px #333, 2px 3px 0px #333, 3px 2px 0px #333;
+    box-shadow: 
+    0.1em 0.1em 0 #333,
+    0.2em 0.2em 0 #333;
 }
 
 header .logo a{
     text-decoration: none;
     color: #333;
+    text-shadow: 
+    0.1em 0.1em 0 rgb(255, 242, 124),
+    0.2em 0.2em 0 #80793E,
+    0.3em 0.3em 0 #CCC8A1
+    
+    ;
 
 }
+
 
 header .logo a h1{
     font-size: 4em;
