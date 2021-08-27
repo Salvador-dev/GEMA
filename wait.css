@@ -192,6 +192,7 @@ ul.active{
     
 }
 
+
 #menubox ul.active li{
     position: relative;
     font-size: 2em;
@@ -202,7 +203,16 @@ ul.active{
     font-weight: 800;
     overflow: visible;
     margin-left: 20%;
+    width: max-content;
+    
+    
 }
+
+#menubox ul.active li:hover{
+    border-bottom: solid 5px #333;
+    
+}
+
 
 #menubox ul.active li a{
     text-decoration: none;
