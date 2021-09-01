@@ -33,6 +33,7 @@ header{
     margin-top: .5em;
     width: 100%;
     transition: .5s;
+    z-index: 10;
 }
 
 header.sticky{
