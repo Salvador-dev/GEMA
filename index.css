@@ -39,7 +39,7 @@ header{
 header.sticky{
     margin: 0;
     background-color: rgba(255, 244, 147, 0.658);
-    
+    z-index: 10;
     backdrop-filter: blur(15px);
 }
 
