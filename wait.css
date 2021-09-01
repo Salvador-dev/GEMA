@@ -20,10 +20,23 @@ img{
 }
 
 header{
-    margin-top: 1em;
+
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    top: 0;
+    width: 100%;
+    transition: .5s;
+    
+}
+
+
+header.sticky{
+    margin: 0;
+    background-color: rgba(255, 244, 147, 0.658);
+    
+    backdrop-filter: blur(15px);
 }
 
 header .logo{
@@ -92,7 +105,7 @@ div.wait{
     align-items: center;
     width: 100%;
     height: 70vh;
-    margin-top: 2em;
+    margin-top: 12em;
 }
 
 div.wait div{
@@ -256,12 +269,13 @@ ul.active{
     .menu-res{
         display: inline-block;
         width: 30%;
-        height: 18%;
+        height: 90%;
         margin: 1em 0;
         cursor: pointer;
         position: absolute;
         top: 0%;
         right: 0%;
+        
     
     }
 
@@ -276,8 +290,8 @@ ul.active{
     div.wait{
     
         width: 100%;
-        height: 80vh;
-        margin-top: 1em;
+        height: 70vh;
+        margin-top: 10em;
         
     }
     
