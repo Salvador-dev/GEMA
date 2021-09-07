@@ -33,12 +33,12 @@ menu.addEventListener("click", ()=>{
     if (window.scrollY != 0){
         header.classList.add('sticky');
 
-       marker.style.background = 'rgba(255, 255, 255, 0.76)';
+       document.querySelector('.marker img').style.fill = ' rgba(255, 255, 255, 0.76)';
 
     } else {
         header.classList.remove('sticky')
 
-        marker.style.background = '#fff';
+
     }
   
  })
@@ -50,11 +50,11 @@ menu.addEventListener("click", ()=>{
 document.querySelector(".menu").addEventListener('mousemove', (e)=>{
     let x = e.clientX;
 
-    marker.style.left = (x-260) + "px";
+    marker.style.left = (x-400) + "px";
 })
 
 document.querySelector(".menu").addEventListener('mouseleave',(e)=>{
-    marker.style.left = 400
+    marker.style.left = 270
 + 'px';
 })
 
