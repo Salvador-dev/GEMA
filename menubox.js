@@ -31,12 +31,32 @@ menu.addEventListener("click", ()=>{
 
  window.addEventListener('scroll', ()=>{
     if (window.scrollY != 0){
-        header.classList.add('sticky')
+        header.classList.add('sticky');
+
+       marker.style.background = 'rgba(255, 255, 255, 0.76)';
+
     } else {
         header.classList.remove('sticky')
+
+        marker.style.background = '#fff';
     }
   
  })
+
+
+ const marker = document.querySelector(".marker");
+
+
+document.querySelector(".menu").addEventListener('mousemove', (e)=>{
+    let x = e.clientX;
+
+    marker.style.left = (x-260) + "px";
+})
+
+document.querySelector(".menu").addEventListener('mouseleave',(e)=>{
+    marker.style.left = 400
++ 'px';
+})
 
   {
 
