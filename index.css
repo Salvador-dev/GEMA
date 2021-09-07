@@ -62,7 +62,7 @@ header .menu ul li .logo{
     z-index: 10;
     width: 7em;
     height: 3em;
-    
+    overflow: hidden;
     
 }
 
