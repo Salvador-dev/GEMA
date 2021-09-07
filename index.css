@@ -26,74 +26,117 @@ img{
 header{
     position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 8em;
     top: 0;
-    margin-top: .5em;
     width: 100%;
+    height: max-content;
     transition: .5s;
-    z-index: 10;
+    background-color: #fff;
+    z-index: 20;
+    
 }
+
+
+
 
 header.sticky{
-    margin: 0;
-    background-color: rgba(255, 244, 147, 0.658);
-    z-index: 10;
-    backdrop-filter: blur(15px);
+    top: -18%;
+    background-color: rgba(255, 255, 255, 0.76);
+    backdrop-filter: blur(5px);
 }
 
-header .logo{
-    margin: 2em 4em;
+
+header.sticky:hover{
+    top: 0;
+}
+
+header .menu ul li .logo{
+    position: relative;
     border: 3px solid #333;
     border-radius: 3px;
-    padding: .5em 1em;
     cursor: pointer;
     box-shadow: 
     0.1em 0.1em 0 #333,
     0.2em 0.2em 0 #333;
-}
-
-header .logo a{
-    text-decoration: none;
-    color: #333;
-    text-shadow: 
-    0.1em 0.1em 0 rgb(255, 242, 124),
-    0.2em 0.2em 0 #80793E,
-    0.3em 0.3em 0 #CCC8A1
+    z-index: 10;
+    width: 7em;
+    height: 3em;
     
-    ;
-
+    
 }
 
-header .logo a h1{
-    font-size: 4em;
-    font-family: monospace;
- 
+
+
+
+header .menu ul li .logo a img{
+   width: 100%;
+   object-fit: contain;
+   position: relative;
+   bottom: 160%;
+   transform: scale(1);
 }
 
 .menu-res{
     display: none;
 }
 
-.menu{
-    margin-right: 2em;
-}
-
 
 .menu ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    position: relative;
     list-style: none;
+    background-color: inherit;
+    
 }
 
+
+
+
 .menu ul li{
-    margin: 2em;
+    margin: 2em  2em 0 2em;
     font-size: 1.5em;
     cursor: pointer;
-    padding: .3em 0;
     font-weight: 700;
+    height: max-content;
+    transition: .2s;
     
+    
+}
+
+.marker{
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    transition: 0.15s;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.marker::before{
+    content: ' ';
+    position: absolute;
+    width: 10em;
+    height: 3em;
+    bottom: -1.2em;
+    border-radius: 50%;
+    background-color: inherit;
+    display: inline-block;
+   
+}
+
+.menu ul li:hover{
+    border-bottom: 3px #333 solid;
+}
+
+
+.menu ul li:nth-child(3){
+
+    position: relative;
+    margin: 1em 2em;
+    border-bottom: none;
+
 }
 
 .menu ul li a{
@@ -118,6 +161,7 @@ header .logo a h1{
     transition: 1s;
     transform: translateX(-100px);
     opacity: 0;
+    z-index: 0;
 }
 
 .sec1 img[data-scroll="in"]{
