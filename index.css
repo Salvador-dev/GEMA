@@ -318,6 +318,10 @@ footer{
         height: 5em;
     }
 
+    header.dark {
+        background-color: #333;
+    }
+
     header.sticky{
         top: 0;
         background-color: rgba(255, 255, 255, 0.829);
@@ -380,7 +384,7 @@ footer{
         margin-top: 5em;
         overflow: hidden;
         padding: 1em;
-        top: -100%;
+        top: -110%;
         transition: .5s;
     }
 
