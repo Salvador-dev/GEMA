@@ -1,31 +1,26 @@
 const menu = document.querySelector(".menu-res")
-const menubox = document.createElement("DIV")
-const x = document.createElement("DIV");
-x.classList.add("x");
-x.innerHTML = "x";
-
-
-
-
-
-menubox.id = "menubox"
-document.body.appendChild(menubox);
-
-
-const nav = document.querySelector("ul")
+const menubox = document.querySelector(".menu2")
 
 menu.addEventListener("click", ()=>{
-    menubox.classList.add("active")
-    menubox.appendChild(x)
-    x.classList.add("active")
-    menubox.appendChild(nav)
-    nav.classList.add("active")
+    menubox.classList.toggle("active")
+
+    menu.classList.toggle("anim")
  })
  
- x.addEventListener("click", ()=>{
-     menubox.classList.remove('active')
-     x.classList.remove('active')
- })
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  const header = document.querySelector('header');
 
@@ -44,6 +39,12 @@ menu.addEventListener("click", ()=>{
  })
 
 
+
+
+
+
+
+
  const marker = document.querySelector(".marker");
 
 
@@ -57,6 +58,17 @@ document.querySelector(".menu").addEventListener('mouseleave',(e)=>{
     marker.style.left = 270
 + 'px';
 })
+
+
+
+
+
+
+
+
+
+
+
 
   {
 
