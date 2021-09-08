@@ -6,7 +6,7 @@
 body{
     color: #333;
     font-family: sans-serif;
-    background-color: #7f7f7f;
+    background-color: #fffccd;
     width: 100%;
 }
 
@@ -108,6 +108,7 @@ header .menu ul li .logo a img{
 
 .menu ul li:nth-child(3){
     font-size: 1.5em;
+    
 
 }
 
@@ -188,7 +189,7 @@ header .menu ul li .logo a img{
     align-items: center;
     opacity: 0;
     transition: 2s;
-    color: #fffffa;
+    color: #333;
     
 }
 
@@ -387,48 +388,51 @@ ul.active{
 
     header {
         margin: 0;
+        justify-content: space-between;
+        
     }
 
-    header .logo{
-        margin: 2em 2em;
-        border: 3px solid #333;
-        border-radius: 3px;
-        padding: .5em 1em;
-        cursor: pointer;
-        box-shadow: 
-    0.1em 0.1em 0 #333,
-    0.2em 0.2em 0 #333;
+    header.sticky{
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.829);
+        backdrop-filter: blur(5px);
+    }
+    
+    
+   
+  
+    .menu ul li{
+        display: none;
     }
 
-    header .logo a h1{
-        font-size: 3em;
-        overflow-x: visible;
-       
+    .menu ul li:nth-child(3){
+        display: inline-block;
+        left: -10%;
+        margin: .5em 1em;
     }
 
-
-    .menu{
+    .marker{
         display: none;
     }
 
     .menu-res{
         display: inline-block;
-        width: 30%;
-        height: 90%;
-        margin: 1em 0;
+        width: 20%;
+        height: auto;
         cursor: pointer;
         position: absolute;
         top: 0%;
         right: 0%;
-    
+        overflow: hidden;
+        margin: .5em 1em;
     }
 
     .menu-res img{
-        width: 90%;
-        height: 90%;
-        object-fit: cover;
-        object-position: top;
-    
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+       
     }
 
     .sec1 img{
