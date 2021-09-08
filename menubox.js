@@ -5,6 +5,8 @@ menu.addEventListener("click", ()=>{
     menubox.classList.toggle("active")
 
     menu.classList.toggle("anim")
+
+    document.querySelector("header").classList.toggle('dark')
  })
  
  
