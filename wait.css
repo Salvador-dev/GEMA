@@ -6,12 +6,16 @@
 body{
     color: #333;
     font-family: sans-serif;
-    background-color: rgb(255, 250, 202);
+    background-color: #fffccd;
+    width: 100%;
 }
+
+
 
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 img{
@@ -20,83 +24,137 @@ img{
 }
 
 header{
-
     position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     top: 0;
     width: 100%;
+    height: max-content;
     transition: .5s;
+    background-color: #fff;
+    z-index: 20;
     
 }
+
+
 
 
 header.sticky{
-    margin: 0;
-    background-color: rgba(255, 244, 147, 0.658);
-    
-    backdrop-filter: blur(15px);
+    top: -18%;
+    background-color: #fff;
+    backdrop-filter: blur(5px);
 }
 
-header .logo{
-    margin: 2em 4em;
-    border: 3px solid #333;
+
+header.sticky:hover{
+    top: 0;
+}
+
+header .menu ul li .logo{
+    position: relative;
     border-radius: 3px;
-    padding: .5em 1em;
     cursor: pointer;
-    box-shadow: 
-    0.1em 0.1em 0 #333,
-    0.2em 0.2em 0 #333;
-}
-
-header .logo a{
-    text-decoration: none;
-    color: #333;
-    text-shadow: 
-    0.1em 0.1em 0 rgb(255, 242, 124),
-    0.2em 0.2em 0 #80793E,
-    0.3em 0.3em 0 #CCC8A1
-    
-    ;
-
+    z-index: 10;
+    width: 7em;
+    height: 3em;
+    overflow: hidden;
+    transform: scale(.9);
+    left: 8px;
 }
 
 
-header .logo a h1{
-    font-size: 4em;
-    font-family: monospace;
- 
+
+
+header .menu ul li .logo a img{
+   width: 100%;
+   object-fit: contain;
+   position: relative;
+   bottom: 160%;
+   transform: scale(1);
+   
+   
 }
 
 .menu-res{
     display: none;
 }
 
-.menu{
-    margin-right: 3.1em;
-}
-
 
 .menu ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    position: relative;
     list-style: none;
+    background-color: inherit;
+    align-items: center;
+    background-color: inherit;
+    
+   
 }
 
+
+
+
 .menu ul li{
-    margin: 2em;
-    font-size: 1.5em;
+    margin: 0 2em;
+    font-size: 1em;
     cursor: pointer;
-    padding: .3em 0;
     font-weight: 700;
+    height: max-content;
+    transition: .2s;
+    z-index: 10;
+}
+
+.menu ul li:nth-child(3){
+    font-size: 1.5em;
     
+
+}
+
+.marker{
+    position: absolute;
+    top: 7em;
+    left: 270px;
+    transition: 0.15s;
+    z-index: 1;
+    height: 2em;
+    overflow: hidden;
+    width: 11em;
+    transform: scaleX(1.5);
+    background: transparent;
+
+}
+
+.marker img{
+    position: relative;
+    bottom: 9em;
+    left: 0;
+    width: 100%;
+    filter: invert(100%);
+    transform: rotate(180deg);
+    background: transparent;
+    
+}
+
+.menu ul li:hover{
+    border-bottom: 3px #333 solid;
+}
+
+
+.menu ul li:nth-child(3){
+
+    position: relative;
+    margin: 1em 2em;
+    border-bottom: none;
+
 }
 
 .menu ul li a{
     text-decoration: none;
     color: #333;
 }
+
 
 div.wait{
     display: flex;
@@ -221,71 +279,167 @@ ul.active{
     
 }
 
-#menubox ul.active li:hover{
-    border-bottom: solid 5px #333;
-    
+
+.menu2 {
+    display: none;
 }
 
-
-#menubox ul.active li a{
-    text-decoration: none;
-    color: #333;
+.menu2.active{
+    top: 0%;
 }
+
 
 @media (max-width: 600px){
 
     *{
-        overflow: hidden;
+        overflow-x: hidden;
+        box-sizing: border-box;
     }
 
     body{
         width: 100%;
+        
     }
 
     header {
         margin: 0;
+        justify-content: space-between;
+        height: 5em;
     }
 
-    header .logo{
-        margin: 2em 2em;
-        border: 3px solid #333;
-        border-radius: 3px;
-        padding: .5em 1em;
-        cursor: pointer;
-        box-shadow: 3px 3px 0px #333, 2px 3px 0px #333, 3px 2px 0px #333;
+    header.sticky{
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.829);
+        backdrop-filter: blur(5px);
+    }
+    
+  
+    .menu ul li{
+        display: none;
     }
 
-    header .logo a h1{
-        font-size: 3em;
-        overflow: visible;
-       
+    .menu ul li:nth-child(3){
+        display: inline-block;
+        left: -10%;
+        margin: 0 1em;
+        transform: scale(.7);
+        
     }
 
 
-    .menu{
+    .marker{
         display: none;
     }
 
     .menu-res{
         display: inline-block;
-        width: 30%;
-        height: 90%;
-        margin: 1em 0;
+        width: 15%;
+        height: auto;
         cursor: pointer;
         position: absolute;
         top: 0%;
         right: 0%;
+        overflow: hidden;
+        margin: .5em 1em;
         
-    
+        transition: .5s;
+    }
+
+    .menu-res.anim{
+        transform: rotate(180deg);
+      
     }
 
     .menu-res img{
-        width: 90%;
-        height: 90%;
-        object-fit: cover;
-        object-position: top;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+       
+    }
+
+    .menu2{
+        display: inline-block;
+        position: fixed;
+        width: 100%;
+        height: calc(100% - 5em);
+        background-color: #333;
+        color: #fff;
+        z-index: 30;
+        margin-top: 5em;
+        overflow: hidden;
+        padding: 1em;
+        top: -100%;
+        transition: .5s;
+    }
+
+    .menu2 div{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4,22%);
+        gap: 1em;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        grid-auto-flow: column;
+        overflow: visible;
+    }
+
+    .menu2 div a {
+        background-color: #ffd45f;
+        font-size: 2em;
+        display: flex;
+        padding: 0%;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 3px;
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+        color: #333;
+        text-decoration: none;
+        overflow: visible;
+        font-weight: 700;
+    
+        
+    }
+
+    .menu2 div a:first-child{
+        grid-column-start: span 2;
+        width: 95%;
+    }
+
+    .menu2 div a:nth-child(2){
+        height: 150%;
     
     }
+
+    .menu2 div a:nth-child(3){
+        margin-top: 3em;
+        clip-path: circle(50% at 50% 50%);
+        height: 125%;
+        width: 90%;
+    
+    }
+
+    .menu2 div a:nth-child(4){
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        width: 90%;
+        position: relative;
+    }
+
+    .menu2 div a:nth-child(4) span{
+        transform: rotate(-90deg);
+    }
+
+    
+
+    
+
+    
+
 
     div.wait{
     
@@ -314,7 +468,14 @@ ul.active{
    
 
 
+   
+
+
 }
+
+
+
+
 
 
 
