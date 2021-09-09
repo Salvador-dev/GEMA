@@ -205,79 +205,10 @@ div.wait h2{
 }
 
 
-#menubox{
-    position: fixed;
-    z-index: 1000;
-    top: 5%;
-    width: 90%;
-    height: 90%;
-    left: 5%;
-    background-color: rgba(255, 244, 147, 0.658);
-    display: none;
-    border-radius: 5px;
-    backdrop-filter: blur(15px);
-}
 
 
- #menubox.active{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.x{
-    font-family: monospace;
-    font-weight: 900;
-    font-size: 7em;
-    line-height: 0%;
-    color: #333;
-    border-radius: 5px;
-    cursor: pointer;
-    position: absolute;
-    right: 0%;
-    top: 0%;
-    width: 1em;
-    height: 1em;
-}
-
-.x.active{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
-ul.active{
-    margin: 0%;
-    width: 100%;
-    height: 90%;
-    position: absolute;
-    bottom: 0%;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    list-style: none;
-    align-items: flex-start;
-    
-}
-
-
-#menubox ul.active li{
-    position: relative;
-    font-size: 2em;
-    width: 4em;
-    height: max-content;
-    cursor: pointer;
-    line-height: 1.7em;
-    font-weight: 800;
-    overflow: visible;
-    margin-left: 20%;
-    width: max-content;
-    
-    
-}
 
 
 .menu2 {
@@ -307,6 +238,10 @@ ul.active{
         height: 5em;
     }
 
+    header.dark {
+        background-color: #333;
+    }
+
     header.sticky{
         top: 0;
         background-color: rgba(255, 255, 255, 0.829);
@@ -320,7 +255,7 @@ ul.active{
 
     .menu ul li:nth-child(3){
         display: inline-block;
-        left: -10%;
+        left: -2em;
         margin: 0 1em;
         transform: scale(.7);
         
@@ -369,7 +304,7 @@ ul.active{
         margin-top: 5em;
         overflow: hidden;
         padding: 1em;
-        top: -100%;
+        top: -110%;
         transition: .5s;
     }
 
@@ -417,10 +352,14 @@ ul.active{
     .menu2 div a:nth-child(3){
         margin-top: 3em;
         clip-path: circle(50% at 50% 50%);
-        height: 125%;
-        width: 90%;
-    
+        height: 5em;
+        width: 5em;
+        
+
     }
+
+    
+
 
     .menu2 div a:nth-child(4){
         grid-column-start: 2;
@@ -433,10 +372,6 @@ ul.active{
     .menu2 div a:nth-child(4) span{
         transform: rotate(-90deg);
     }
-
-    
-
-    
 
     
 
@@ -454,30 +389,20 @@ ul.active{
         width: 100%;
         height: 40%;
         position: relative;
-
-    }
-   
     
-  
+    }
+    
+    
+    
     div.wait h2{
         width: 90%;
         margin-top: 1em;
         font-size: 2.2em;
         text-align: center;
     }
-   
-
-
-   
-
+    
 
 }
-
-
-
-
-
-
 
 
 
