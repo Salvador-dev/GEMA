@@ -335,7 +335,7 @@ footer{
 
     .menu ul li:nth-child(3){
         display: inline-block;
-        left: -10%;
+        left: -2em;
         margin: 0 1em;
         transform: scale(.7);
         
@@ -432,10 +432,14 @@ footer{
     .menu2 div a:nth-child(3){
         margin-top: 3em;
         clip-path: circle(50% at 50% 50%);
-        height: 125%;
-        width: 90%;
-    
+        height: 5em;
+        width: 5em;
+        
+
     }
+
+    
+
 
     .menu2 div a:nth-child(4){
         grid-column-start: 2;
@@ -451,9 +455,6 @@ footer{
 
     
 
-    
-
-    
 
 
     .sec1{
@@ -501,5 +502,8 @@ footer{
 
 
 }
+
+
+
 
 
