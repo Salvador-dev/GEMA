@@ -2,13 +2,17 @@ const menu = document.querySelector(".menu-res")
 const menubox = document.querySelector(".menu2")
 
 menu.addEventListener("click", ()=>{
-    menubox.classList.toggle("active")
+    menubox.classList.toggle("active");
 
-    menu.classList.toggle("anim")
+    menu.classList.toggle("anim");
 
-    document.querySelector("header").classList.toggle('dark')
+    header.classList.remove('sticky');
 
-    if (menubox.classList.contains("active")){
+    header.classList.toggle('dark');
+
+    
+
+    if (document.querySelector("header").classList.contains("dark")){
 
         setTimeout(() => {
 
@@ -56,7 +60,7 @@ menu.addEventListener("click", ()=>{
  const header = document.querySelector('header');
 
  window.addEventListener('scroll', ()=>{
-    if (window.scrollY != 0){
+    if (window.scrollY != 0 && !header.classList.contains('dark')){
         header.classList.add('sticky');
 
        document.querySelector('.marker img').style.fill = ' rgba(255, 255, 255, 0.76)';
@@ -66,6 +70,8 @@ menu.addEventListener("click", ()=>{
 
 
     }
+
+    
   
  })
 
