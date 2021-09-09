@@ -7,7 +7,36 @@ menu.addEventListener("click", ()=>{
     menu.classList.toggle("anim")
 
     document.querySelector("header").classList.toggle('dark')
+
+    if (menubox.classList.contains("active")){
+
+        setTimeout(() => {
+
+            document.querySelector(".logo a img").setAttribute('src', 'logo/4.png')
+   
+             document.querySelector(".menu-res img").setAttribute('src', 'logo/gema logo SI SIMBOLO sin fondo-01.png')
+            
+        }, 300);
+        
+       } else {
+   
+
+        setTimeout(() => {
+
+            document.querySelector(".logo a img").setAttribute('src', 'logo/2.png')
+   
+            document.querySelector(".menu-res img").setAttribute('src', 'logo/gema logo SI LOgo invertido sin fondo-01.png')
+            
+        }, 300);
+
+          
+   
+       }
  })
+
+ 
+
+ 
  
  
 
