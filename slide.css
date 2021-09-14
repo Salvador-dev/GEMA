@@ -50,7 +50,7 @@ section .text{
     font-size: 10em;
     user-select: none;
     pointer-events: none;
-    transition: 1.5s ease-out;
+    transition: 2s ease-out;
     transform-origin: 0 400px;
     transform: rotate(-80deg);
 }
