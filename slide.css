@@ -20,9 +20,10 @@
 
 .slide img{
     width: 30%;
-    height: auto;
+    height: 80vh;
     margin-bottom: 20em;
     z-index: 20;
+    object-fit: cover;
 }
 
 .slide img:last-child{
