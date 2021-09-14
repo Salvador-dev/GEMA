@@ -27,7 +27,7 @@
 }
 
 .slide img:last-child{
-
+    
     margin-bottom: 5em;
 }
 
@@ -80,7 +80,7 @@ section .text span{
     .slide img{
         position: relative;
         width: 70%;
-        height: auto;
+        height: 60vh;
         margin: 15em;
         left: -10%;
         z-index: 20;
