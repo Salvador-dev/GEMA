@@ -642,6 +642,7 @@ header .menu ul li .logo a img{
         width: max-content;
         margin: .5em;
         height: max-content;
+        right: 0;
     }
     
     footer .wrapper .links ul{
