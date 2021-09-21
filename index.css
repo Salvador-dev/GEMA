@@ -8,6 +8,7 @@ body{
     font-family: sans-serif;
     background-color: #fffccd;
     width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -279,16 +280,89 @@ header .menu ul li .logo a img{
     
     }
 
-footer{
-    margin: 3em 2em;
-    background-color: #444;
-    height: 100px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
+    footer{
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+        background-color: #010400;
+        overflow: hidden;
+        padding: 1em;
+    }
+    
+    footer .wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    
+    footer .wrapper .wrapp-ul{
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+    }
+    
+    footer .wrapper .wrapp-ul ul{
+        list-style: none;
+        margin: .5em;
+    }
+    
+    footer .wrapper .wrapp-ul ul li{
+        margin: .5em;
+    }
+    
+    footer .wrapper .wrapp-ul ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    footer .wrapper .wrapp-ul ul li a:hover{
+        text-decoration: underline;
+        
+    }
+    
+    footer .wrapper .logo{
+        width: 10%;
+        height: 4em;
+        overflow: hidden;
+        
+    }
+    
+    footer .wrapper .logo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        
+    }
+    
+    footer .wrapper .links{
+        width: max-content;
+        margin: .5em;
+        position: relative;
+        right: 2em;
+    }
+    
+    footer .wrapper .links ul{
+        display: flex;
+        list-style: none;
+    }
+    
+    footer .wrapper .links ul li{
+        margin: .5em;
+    }
+    
+    footer .wrapper .links ul li:first-child a img{
+        width: auto;
+        height: 2em;
+    }
+    
+    footer .wrapper .links ul li:last-child a img{
+        width: 2em;
+        height: auto;
+    }
 
 
 .menu2 {
@@ -496,6 +570,98 @@ footer{
 
     .sec2 .buttons div {
         overflow-x: visible;
+    }
+
+    footer{
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 40vh;
+        background-color: #010400;
+        overflow: hidden;
+        padding: 1em;
+    }
+    
+    footer .wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    
+    footer .wrapper .wrapp-ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 90%;
+        height: 40%;
+        position: relative;
+        top: 30%;
+    }
+    
+    footer .wrapper .wrapp-ul ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+    }
+    
+    footer .wrapper .wrapp-ul ul li{
+        margin: 0 .5em;
+    }
+    
+    footer .wrapper .wrapp-ul ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    footer .wrapper .wrapp-ul ul li a:hover{
+        text-decoration: underline;
+        
+    }
+    
+    footer .wrapper .logo{
+        width: 30%;
+        height: 4em;
+        overflow: hidden;
+        position: absolute;
+        
+    }
+    
+    footer .wrapper .logo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        
+    }
+    
+    footer .wrapper .links{
+        width: max-content;
+        margin: .5em;
+        height: max-content;
+    }
+    
+    footer .wrapper .links ul{
+        display: flex;
+        list-style: none;
+        
+    }
+    
+    footer .wrapper .links ul li{
+        margin: 0 2em;
+    }
+    
+    footer .wrapper .links ul li:first-child a img{
+        width: auto;
+        height: 2em;
+    }
+    
+    footer .wrapper .links ul li:last-child a img{
+        width: 2em;
+        height: auto;
     }
 
    
