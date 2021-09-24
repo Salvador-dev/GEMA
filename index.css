@@ -793,7 +793,6 @@ ul.spiral {
       
     ul.spiral {
         position: relative;
-        overflow: hidden;
         perspective: 900px;
         list-style: none;
         height: 100%;
@@ -816,6 +815,7 @@ ul.spiral {
         width: 100%;
         transform: translateY(100vh);
         font-size: 1.3rem;
+        left: 5%;
         font-family: sans-serif;
         font-weight: bold;
         animation: 5.3333333333s spiral-staircase linear infinite;
