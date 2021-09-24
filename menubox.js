@@ -41,7 +41,16 @@ menu.addEventListener("click", ()=>{
  
 
  
- 
+ const ul = document.querySelector(".spiral");
+   
+
+    document.addEventListener('scroll', e=>{
+        ul.style.transform = `translateX(${50-scrollY/20}vw)`;
+
+
+    })
+    
+
  
 
 
