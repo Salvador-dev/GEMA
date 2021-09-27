@@ -21,12 +21,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    padding-top: 5em;
 
 }
 
 .slide img{
-    margin-top: 5em;
+    
     width: 30%;
     height: 80vh;
     margin-bottom: 20em;
