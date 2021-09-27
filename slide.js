@@ -12,4 +12,17 @@ text.innerHTML = text.textContent.replace(/\S/g,
         document.querySelector('.text').style.transform = `rotate(-${80+scrollY/3}deg)`
 
     })
+
+img = document.querySelectorAll("IMG");
+
+
+img.forEach((item)=>{
+    item.addEventListener("click", ()=>{
+        let el = document.querySelector("." + item.getAttribute("data-link"));
+        el.scrollIntoView({block: "center", behavior: "smooth"});
+        
+        
+        
+    })
+})
     
