@@ -194,11 +194,11 @@ header .menu ul li .logo a img{
 .sec2 button{
     display: inline-block;
     position: relative;
-    width: 20%;
-    height: 10%;
+    width: 15%;
+    height: 8%;
     background-color: #f2b202 ;
-    top: -15%;
-    left: 40%;
+    top: -17%;
+    left: 42.5%;
     z-index: 1;
     outline: none;
     border: none;
@@ -254,6 +254,7 @@ header .menu ul li .logo a img{
         width: 10%;
         height: 4em;
         overflow: hidden;
+        margin-left: 2.5em;
         
     }
     
@@ -300,7 +301,7 @@ header .menu ul li .logo a img{
     top: 0%;
 }
 
-.sec3{
+.sec3, .sec5{
     width: 100%;
     height: 100vh;
     margin-top: 7em;
@@ -312,7 +313,7 @@ header .menu ul li .logo a img{
 
 
   
-ul.spiral {
+ul.spiral, ul.spiral2 {
     position: relative;
     overflow: hidden;
     perspective: 900px;
@@ -325,6 +326,10 @@ ul.spiral {
     transform: translateX(100vw);
     color: #fff;
   }
+
+  ul.spiral2{
+    transform: translateX(-100vw);
+  }
   
   @keyframes width-sway {
     0%, 100% {
@@ -334,7 +339,7 @@ ul.spiral {
       width: 100%;
     }
   }
-  ul.spiral li {
+  ul.spiral li, ul.spiral2 li {
     position: absolute;
     top: 0;
     width: 100%;
@@ -350,131 +355,131 @@ ul.spiral {
     
   }
   
-  ul.spiral li:nth-child(1) {
+  ul.spiral li:nth-child(1), ul.spiral2 li:nth-child(1) {
     animation-delay: 0.3333333333s;
   }
   
-  ul.spiral li:nth-child(2) {
+  ul.spiral li:nth-child(2), ul.spiral2 li:nth-child(2) {
     animation-delay: 0.6666666667s;
   }
   
-  ul.spiral li:nth-child(3) {
+  ul.spiral li:nth-child(3), ul.spiral2 li:nth-child(3) {
     animation-delay: 1s;
   }
   
-  ul.spiral li:nth-child(4) {
+  ul.spiral li:nth-child(4), ul.spiral2 li:nth-child(4) {
     animation-delay: 1.3333333333s;
   }
   
-  ul.spiral li:nth-child(5) {
+  ul.spiral li:nth-child(5), ul.spiral2 li:nth-child(5) {
     animation-delay: 1.6666666667s;
   }
   
-  ul.spiral li:nth-child(6) {
+  ul.spiral li:nth-child(6), ul.spiral2 li:nth-child(6) {
     animation-delay: 2s;
   }
   
-  ul.spiral li:nth-child(7) {
+  ul.spiral li:nth-child(7), ul.spiral2 li:nth-child(7) {
     animation-delay: 2.3333333333s;
   }
   
-  ul.spiral li:nth-child(8) {
+  ul.spiral li:nth-child(8), ul.spiral2 li:nth-child(8) {
     animation-delay: 2.6666666667s;
   }
   
-  ul.spiral li:nth-child(9) {
+  ul.spiral li:nth-child(9), ul.spiral2 li:nth-child(9) {
     animation-delay: 3s;
   }
   
-  ul.spiral li:nth-child(10) {
+  ul.spiral li:nth-child(10), ul.spiral2 li:nth-child(10) {
     animation-delay: 3.3333333333s;
   }
   
-  ul.spiral li:nth-child(11) {
+  ul.spiral li:nth-child(11), ul.spiral2 li:nth-child(11) {
     animation-delay: 3.6666666667s;
   }
   
-  ul.spiral li:nth-child(12) {
+  ul.spiral li:nth-child(12), ul.spiral2 li:nth-child(12) {
     animation-delay: 4s;
   }
   
-  ul.spiral li:nth-child(13) {
+  ul.spiral li:nth-child(13), ul.spiral2 li:nth-child(13) {
     animation-delay: 4.3333333333s;
   }
   
-  ul.spiral li:nth-child(14) {
+  ul.spiral li:nth-child(14), ul.spiral2 li:nth-child(14) {
     animation-delay: 4.6666666667s;
   }
   
-  ul.spiral li:nth-child(15) {
+  ul.spiral li:nth-child(15), ul.spiral2 li:nth-child(15) {
     animation-delay: 5s;
   }
   
-  ul.spiral li:nth-child(16) {
+  ul.spiral li:nth-child(16), ul.spiral2 li:nth-child(16) {
     animation-delay: 5.3333333333s;
   }
   
-  ul.spiral li:nth-child(1) {
+  ul.spiral li:nth-child(1), ul.spiral2 li:nth-child(1) {
     right: 1rem;
   }
   
-  ul.spiral li:nth-last-child(1) {
+  ul.spiral li:nth-last-child(1), ul.spiral2 li:nth-last-child(1) {
     right: 1rem;
   }
   
-  ul.spiral li:nth-child(2) {
+  ul.spiral li:nth-child(2), ul.spiral2 li:nth-child(2) {
     right: 2rem;
   }
   
-  ul.spiral li:nth-last-child(2) {
+  ul.spiral li:nth-last-child(2), ul.spiral2 li:nth-last-child(2){
     right: 2rem;
   }
   
-  ul.spiral li:nth-child(3) {
+  ul.spiral li:nth-child(3), ul.spiral2 li:nth-child(3) {
     right: 3rem;
   }
   
-  ul.spiral li:nth-last-child(3) {
+  ul.spiral li:nth-last-child(3), ul.spiral2 li:nth-last-child(3) {
     right: 3rem;
   }
   
-  ul.spiral li:nth-child(4) {
+  ul.spiral li:nth-child(4), ul.spiral2 li:nth-child(4) {
     right: 4rem;
   }
   
-  ul.spiral li:nth-last-child(4) {
+  ul.spiral li:nth-last-child(4), ul.spiral2 li:nth-last-child(4) {
     right: 4rem;
   }
   
-  ul.spiral li:nth-child(5) {
+  ul.spiral li:nth-child(5), ul.spiral2 li:nth-child(5) {
     right: 5rem;
   }
   
-  ul.spiral li:nth-last-child(5) {
+  ul.spiral li:nth-last-child(5), ul.spiral2 li:nth-last-child(5) {
     right: 5rem;
   }
   
-  ul.spiral li:nth-child(6) {
+  ul.spiral li:nth-child(6), ul.spiral2 li:nth-child(6) {
     right: 6rem;
   }
   
-  ul.spiral li:nth-last-child(6) {
+  ul.spiral li:nth-last-child(6), ul.spiral2 li:nth-last-child(6) {
     right: 6rem;
   }
   
-  ul.spiral li:nth-child(7) {
+  ul.spiral li:nth-child(7), ul.spiral2 li:nth-child(7) {
     right: 7rem;
   }
   
-  ul.spiral li:nth-last-child(7) {
+  ul.spiral li:nth-last-child(7), ul.spiral2 li:nth-last-child(7) {
     right: 7rem;
   }
   
-  ul.spiral li:nth-child(8) {
+  ul.spiral li:nth-child(8), ul.spiral2 li:nth-child(8) {
     right: 8rem;
   }
   
-  ul.spiral li:nth-last-child(8) {
+  ul.spiral li:nth-last-child(8), ul.spiral2 li:nth-last-child(8) {
     right: 8rem;
   }
   
@@ -489,6 +494,37 @@ ul.spiral {
       transform: rotateY(-90deg) translateY(-5vh) rotate(0deg);
     }
   }
+
+  section.intro, .sec6{
+    width: 100%;
+    height: 100vh;
+    padding: 2em;
+    background-color: #333;
+      
+  }
+
+  section.intro div, section.sec6 div{
+    font-size: 2em;
+  }
+
+  section.intro div p, section.sec6 div p{
+
+    margin-bottom: 3em;
+    color: #fff;
+  }
+
+  section.intro div p span, section.sec6 div p span{
+    font-weight: 700;
+    margin-bottom: 3em;
+  }
+
+  .sec5{
+    margin-top: 0;
+  }
+
+  
+
+  
 
 
 
@@ -671,9 +707,9 @@ ul.spiral {
         display: inline-block;
         position: relative;
         width: 50%;
-        height: 10%;
+        height: 7%;
         background-color: #f2b202 ;
-        top: -15%;
+        top: -17%;
         left: 25%;
         z-index: 10;
         outline: none;
@@ -681,6 +717,10 @@ ul.spiral {
         color: #fff;
         font-size: 1.5em;
         cursor: pointer;
+    }
+
+    section.intro div, section.sec6 div{
+      font-size: 1.3em;
     }
 
     
@@ -741,7 +781,7 @@ ul.spiral {
         height: 4em;
         overflow: hidden;
         position: absolute;
-        
+        margin-left: 0em;
     }
     
     footer .wrapper .logo img{
@@ -780,7 +820,7 @@ ul.spiral {
     }
 
 
-    .sec3{
+    .sec3, .sec5{
         width: 100%;
         height: 100vh;
         margin-top: 0;
@@ -791,7 +831,7 @@ ul.spiral {
     
     
       
-    ul.spiral {
+    ul.spiral, ul.spiral2 {
         position: relative;
         perspective: 900px;
         list-style: none;
@@ -810,7 +850,7 @@ ul.spiral {
           width: 100%;
         }
       }
-      ul.spiral li {
+      ul.spiral li, ul.spiral2 li {
         position: absolute;
         width: 100%;
         transform: translateY(100vh);
