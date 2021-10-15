@@ -42,13 +42,22 @@ menu.addEventListener("click", ()=>{
 
  
  const ul = document.querySelector(".spiral");
+ const ul2 = document.querySelector(".spiral2");
    
 
-    document.addEventListener('scroll', e=>{
-        ul.style.transform = `translateX(${50-scrollY/20}vw)`;
+ 
 
+    document.addEventListener('scroll', e=>{
+        ul.style.transform = `translateX(${60-scrollY/10}vw)`;
+
+        ul2.style.transform = `translateX(${-220+scrollY/10}vw)`;
+
+        
 
     })
+
+    
+  
     
 
  
