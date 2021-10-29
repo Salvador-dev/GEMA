@@ -4,12 +4,13 @@ text.innerHTML = text.textContent.replace(/\S/g,
 
     const element = document.querySelectorAll("span");
     for(let i = 0; i<element.length; i++){
-        element[i].style.transform = "rotate("+i*18+"deg) "
+        element[i].style.transform = "rotate("+i*12+"deg) ";
+        element[i].style.background = "transparent";
         
     }
 
     document.addEventListener('scroll', e=>{
-        document.querySelector('.text').style.transform = `rotate(-${80+scrollY/3}deg)`
+        text.style.transform = `rotate(-${75+scrollY/3}deg)`
 
     })
 
