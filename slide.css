@@ -21,12 +21,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 5em;
+    
 
 }
 
 .slide img{
-    
+    margin-top: 5em;
     width: 30%;
     height: 80vh;
     margin-bottom: 20em;
@@ -56,12 +56,12 @@ section{
 section .text{
     position: absolute;
     color: #fff;
-    font-size: 10em;
+    font-size: 5em;
     user-select: none;
     pointer-events: none;
     transition: 2s ease-out;
     transform-origin: 0 400px;
-    transform: rotate(-80deg);
+    transform: rotate(-75deg);
 }
 
 
@@ -126,8 +126,8 @@ section .text span{
         pointer-events: none;
         transition: 1.5s ease-out;
         transform-origin: 0 100px;
-        transform: rotate(0deg);
-        right: 90%;
+        transform: rotate(15deg);
+        right: 80%;
         top: 40%;
 
     }
