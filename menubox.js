@@ -48,9 +48,9 @@ menu.addEventListener("click", ()=>{
  
 
     document.addEventListener('scroll', e=>{
-        ul.style.transform = `translateX(${60-scrollY/10}vw)`;
+        ul.style.transform = `translateX(${140-scrollY/10}vw)`;
 
-        ul2.style.transform = `translateX(${-220+scrollY/10}vw)`;
+        ul2.style.transform = `translateX(${-260+scrollY/10}vw)`;
 
         
 
