@@ -310,6 +310,10 @@ header .menu ul li .logo a img{
     
 }
 
+.sec3{
+  margin-top: 0%;
+}
+
 
 
   
@@ -504,7 +508,23 @@ ul.spiral, ul.spiral2 {
   }
 
   section.intro div, section.sec6 div{
+    
     font-size: 2em;
+    
+  }
+
+  section.sec6 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+  }
+
+  section.intro div{
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
 
   section.intro div p, section.sec6 div p{
@@ -513,7 +533,33 @@ ul.spiral, ul.spiral2 {
     color: #fff;
   }
 
-  section.intro div p span, section.sec6 div p span{
+  section.welcome{
+    width: 100%;
+    height: 100vh;
+    padding: 2em;
+    background-color: #333;
+    margin-top: 10em;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+  }
+
+ 
+ 
+
+  section.welcome h2{
+    font-size: 2em;
+    font-weight: 700;
+    width: 90%;
+    text-align: center;
+    color: #fff;
+  
+
+  }
+
+  section.sec6 div p span{
     font-weight: 700;
     margin-bottom: 3em;
   }
@@ -719,8 +765,34 @@ ul.spiral, ul.spiral2 {
         cursor: pointer;
     }
 
-    section.intro div, section.sec6 div{
+    section.intro div, section.sec6 div {
       font-size: 1.3em;
+    }
+
+    section.welcome{
+      width: 100%;
+      height: 100vh;
+      padding: 2em;
+      background-color: #333;
+      margin-top: 10em;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0%;
+    }
+  
+   
+   
+  
+    section.welcome h2{
+      font-size: 1.5em;
+      font-weight: 700;
+      width: 90%;
+      text-align: left;
+      color: #fff;
+    
+  
     }
 
     
