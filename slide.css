@@ -96,7 +96,7 @@ section .text span{
     }
 
     .slide img:first-child{
-        margin-top: 5em;
+        margin-top: 10em;
     }
 
     .slide img:last-child{
